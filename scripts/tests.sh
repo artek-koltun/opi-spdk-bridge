@@ -107,3 +107,5 @@ grep "Total" log.txt
 
 # this is last line
 docker-compose ps -a
+
+exit 1
