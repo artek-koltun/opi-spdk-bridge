@@ -103,8 +103,8 @@ jobs:
               exit 1
           fi
 
-          if [ -f scripts/no_file_tests.sh ]; then
-              scripts/tests.sh
+          if [ -f scripts/tests.sh ]; then
+              scripts/tests.sh || exit $?
           else
               echo "No test script"
           fi
